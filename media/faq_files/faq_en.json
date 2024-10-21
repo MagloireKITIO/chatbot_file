@@ -1,0 +1,206 @@
+Voici la traduction en anglais des questions et réponses dans le même format JSON :
+
+```json
+{
+    "metadata": {
+        "version": "1.0",
+        "language": "en",
+        "last_updated": "2023-10-20"
+    },
+    "settings": {
+        "welcome_message": "Hello, 😊 Thank you for contacting ACTIVA INSURANCE. I am Ruby, your advisor. Please tell us how we can assist you?",
+        "farewell_message": "Thank you for contacting ACTIVA, we remain at your disposal from Monday to Friday from 8am to 6pm at the toll-free number 8033, by email at service.clients@group-activa.com or via WhatsApp at 692880000. Activa, Passionately customer-oriented.",
+        "inactivity_timeout": 600
+    },
+    "categories": [
+        {
+            "name": "General",
+            "questions": [
+                {
+                    "id": "gen_001",
+                    "question": "How can I get my payment statement/balance/situation?",
+                    "answer": "To get your payment statement/balance/situation, follow these steps:\n1. Type the word 'policy' (a document showing your policy number will be automatically generated)\n2. Type 'Balance' followed by your policy number (Example: Balance 000000)",
+                    "keywords": [
+                        "balance",
+                        "payment statement",
+                        "situation",
+                        "policy"
+                    ]
+                },
+                {
+                    "id": "gen_002",
+                    "question": "What are your insurance company's opening hours?",
+                    "answer": "We are open from Monday to Friday from 8am to 5:30pm.",
+                    "keywords": [
+                        "hours",
+                        "opening",
+                        "times"
+                    ]
+                },
+                {
+                    "id": "gen_003",
+                    "question": "How can I contact your insurance company?",
+                    "answer": "You can contact us by phone at 8033, by email at service.clients@group-activa.com or via WhatsApp at 692880000.",
+                    "keywords": [
+                        "contact",
+                        "phone",
+                        "email",
+                        "whatsapp"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Subscription and Modifications",
+            "questions": [
+                {
+                    "id": "sub_001",
+                    "question": "How can I subscribe to one of your products?",
+                    "answer": "For information about our various products, please check our mobile app MY ACTIVA or contact one of our advisors.",
+                    "keywords": [
+                        "subscribe",
+                        "products",
+                        "terms"
+                    ]
+                },
+                {
+                    "id": "sub_002",
+                    "question": "How can I increase or decrease my monthly premium?",
+                    "answer": "To increase or decrease your monthly premium, you need to:\n- Write a request with the subject 'increase or decrease of my monthly premium'\n- Attach a photocopy of your ID card\n- Send the documents via this channel or drop them off at one of our branches.",
+                    "keywords": [
+                        "premium",
+                        "increase",
+                        "decrease"
+                    ]
+                },
+                {
+                    "id": "sub_003",
+                    "question": "How can I change the name of the policyholder and/or beneficiary?",
+                    "answer": "To change the name of the policyholder and/or beneficiary, provide:\n- A request with the subject 'name change'\n- A photocopy of the ID card and/or Birth Certificate\n- Send the documents via this channel or drop them off at one of our branches.",
+                    "keywords": [
+                        "change",
+                        "name",
+                        "policyholder",
+                        "beneficiary"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Payment",
+            "questions": [
+                {
+                    "id": "pay_001",
+                    "question": "How can I switch to payment by direct debit?",
+                    "answer": "To switch to payment by direct debit, provide:\n- A request with the subject 'change of payment method'\n- Your bank account details (RIB)\n- A photocopy of your ID card\n- Send the documents via this channel or drop them off at one of our branches.",
+                    "keywords": [
+                        "payment",
+                        "direct debit",
+                        "method"
+                    ]
+                },
+                {
+                    "id": "pay_002",
+                    "question": "How can I switch to cash payment?",
+                    "answer": "To switch to cash payment, provide:\n- A request with the subject 'change of payment method'\n- A photocopy of your ID card\n- Send the documents via this channel or drop them off at one of our branches.",
+                    "keywords": [
+                        "payment",
+                        "cash",
+                        "method"
+                    ]
+                },
+                {
+                    "id": "pay_003",
+                    "question": "How can I pay my insurance premiums?",
+                    "answer": "You can pay your insurance premiums via our mobile app MY ACTIVA. We also accept bank transfers, checks, and cash. For more information, contact us toll-free at 8033 from Monday to Friday from 8am to 6pm.",
+                    "keywords": [
+                        "payment",
+                        "premiums",
+                        "methods"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Surrender and Loan",
+            "questions": [
+                {
+                    "id": "rac_001",
+                    "question": "How can I make a full surrender?",
+                    "answer": "For a full surrender, provide:\n- A request addressed to the CEO of ACTIVA - Life for 'Request for full surrender of policy xxxxx'\n- A bank account statement signed 3 times\n- A photocopy of your ID card\nFor more information, call us toll-free at 8033 from Monday to Friday from 8am to 6pm.",
+                    "keywords": [
+                        "surrender",
+                        "full"
+                    ]
+                },
+                {
+                    "id": "rac_002",
+                    "question": "How can I make a partial surrender?",
+                    "answer": "For a partial surrender, provide:\n- A request addressed to the CEO of ACTIVA - Life for 'Request for partial surrender of policy xxxxx'\n- A bank account statement signed 3 times\n- A photocopy of your ID card\nFor more information, call us toll-free at 8033 from Monday to Friday from 8am to 6pm.",
+                    "keywords": [
+                        "surrender",
+                        "partial"
+                    ]
+                },
+                {
+                    "id": "rac_003",
+                    "question": "How can I request a loan?",
+                    "answer": "To request a loan, provide:\n- A request addressed to the CEO of ACTIVA - Life for 'Request for a loan on policy xxxxx'\n- A bank account statement signed 3 times\n- A photocopy of your ID card\nFor more information, call us toll-free at 8033 from Monday to Friday from 8am to 6pm.",
+                    "keywords": [
+                        "loan"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Claims",
+            "questions": [
+                {
+                    "id": "sin_001",
+                    "question": "How can I declare a car accident claim?",
+                    "answer": "To declare a car accident claim, provide within 5 days of the incident:\n- The claim declaration form\n- The police report\n- Photos of the accident\n- A photocopy of the insured's ID card",
+                    "keywords": [
+                        "claim",
+                        "car",
+                        "declaration"
+                    ]
+                },
+                {
+                    "id": "sin_002",
+                    "question": "How can I declare a death claim?",
+                    "answer": "To declare a death claim, provide:\n- A request with the subject 'declaration of life or death claim'\n- The cause of death certificate\n- The death certificate\n- A bank account statement",
+                    "keywords": [
+                        "claim",
+                        "death",
+                        "declaration"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Practical Information",
+            "questions": [
+                {
+                    "id": "info_001",
+                    "question": "What insurance products do you offer?",
+                    "answer": "We offer life, health, home, car insurance products, etc. For more information, please check our mobile app My Activa or contact one of our advisors.",
+                    "keywords": [
+                        "products",
+                        "offers"
+                    ]
+                },
+                {
+                    "id": "info_002",
+                    "question": "Where are you located?",
+                    "answer": "Our offices are located at:\n● Headquarters: Akwa Douala, near the Prince de Galles Hotel\n● Yaoundé: Hippodrome, behind the Chamber of Commerce\n● Bafoussam: In front of CONGELCAM Tamdja\n● Kribi: In front of the Mokolo Police Station\n● Bamenda: Commercial Avenue\n● Garoua: Avenue de la Liberté",
+                    "keywords": [
+                        "location",
+                        "address",
+                        "offices"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```

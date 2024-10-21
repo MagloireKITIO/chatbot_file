@@ -1,0 +1,272 @@
+Watching for file changes with StatReloader
+FAQ chargé avec succès pour fr
+Aucun fichier FAQ trouvé pour la langue: en
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+STREAM b'IHDR' 16 13
+STREAM b'sRGB' 41 1
+STREAM b'gAMA' 54 4
+STREAM b'pHYs' 70 9
+STREAM b'IDAT' 91 65445
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+STREAM b'IHDR' 16 13
+STREAM b'sRGB' 41 1
+STREAM b'IDAT' 54 8192
+Message reçu: 'produit', Langue: fr
+Réponse du chatbot: 'Pour toutes informations sur nos différents produits, merci de consulter notre application mobile MY ACTIVA ou de contacter un de nos conseillers.'
+Message reçu: 'Obtenir un devis', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Obtenir un devis', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Message reçu: 'produit', Langue: fr
+Réponse du chatbot: 'Pour toutes informations sur nos différents produits, merci de consulter notre application mobile MY ACTIVA ou de contacter un de nos conseillers.'
+Message reçu: 'Comment obtenir mon état d'encaissement/solde/situation ?', Langue: fr
+Réponse du chatbot: 'Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :
+1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)
+2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)'
+Message reçu: 'encaissement', Langue: fr
+Réponse du chatbot: 'Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :
+1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)
+2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)'
+Not Found: /favicon.ico
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Not Found: /chatbot/chemin/vers/votre/icone/utilisateur.png
+Message reçu: 'Encaissement', Langue: fr
+Réponse du chatbot: 'Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :
+1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)
+2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)'
+Message reçu: 'police', Langue: fr
+Réponse du chatbot: 'Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :
+1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)
+2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)'
+Message reçu: 'produit', Langue: fr
+Réponse du chatbot: 'Pour toutes informations sur nos différents produits, merci de consulter notre application mobile MY ACTIVA ou de contacter un de nos conseillers.'
+Message reçu: 'est ce que vous avez des polices d'assurance', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Not Found: /chatbot/chemin/vers/votre/image/de/fond.jpg
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Message reçu: 'Obtenir un devis', Langue: fr
+Not Found: /chatbot/chemin/vers/votre/icone/utilisateur.png
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Message reçu: 'Contacter un conseiller', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Not Found: /chatbot/chemin/vers/votre/logo/activa.png
+Not Found: /chatbot/chemin/vers/votre/image/de/fond.jpg
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Message reçu: 'Obtenir un devis', Langue: fr
+Not Found: /chatbot/chemin/vers/votre/icone/utilisateur.png
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Message reçu: 'Contacter un conseiller', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Not Found: /chatbot/chemin/vers/votre/image/de/fond.jpg
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Not Found: /chatbot/chemin/vers/votre/icone/utilisateur.png
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Not Found: /chatbot/chemin/vers/votre/logo/activa.png
+Not Found: /chatbot/chemin/vers/votre/image/de/fond.jpg
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Not Found: /chatbot/chemin/vers/votre/image/de/fond.jpg
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Not Found: /chatbot/chemin/vers/votre/image/de/fond.jpg
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Message reçu: 'Obtenir un devis', Langue: fr
+Not Found: /chatbot/chemin/vers/votre/icone/utilisateur.png
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Message reçu: 'produit', Langue: fr
+Réponse du chatbot: 'Pour toutes informations sur nos différents produits, merci de consulter notre application mobile MY ACTIVA ou de contacter un de nos conseillers.'
+Message reçu: 'encaissement', Langue: fr
+Réponse du chatbot: 'Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :
+1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)
+2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)'
+Not Found: /chatbot/chemin/vers/votre/image/de/fond.jpg
+Not Found: /chatbot/chemin/vers/votre/icone/chatbot.png
+Not Found: /chatbot/chemin/vers/votre/logo/activa.png
+Message reçu: 'vos produits', Langue: fr
+Réponse du chatbot: 'Pour toutes informations sur nos différents produits, merci de consulter notre application mobile MY ACTIVA ou de contacter un de nos conseillers.'
+Message reçu: 'produit', Langue: fr
+Réponse du chatbot: 'Pour toutes informations sur nos différents produits, merci de consulter notre application mobile MY ACTIVA ou de contacter un de nos conseillers.'
+Message reçu: 'Contacter un conseiller', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Réponse du chatbot: 'Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :
+- La fiche de déclaration de sinistre
+- Le procès-verbal
+- Les photos du sinistre
+- Une photocopie de la CNI de l'assuré'
+Watching for file changes with StatReloader
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Message reçu: 'encaissement', Langue: fr
+Réponse du chatbot: 'Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :
+1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)
+2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)'
+Message reçu: 'comment obtenir mon état d'encaissement', Langue: fr
+Réponse du chatbot: 'Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :
+1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)
+2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)'
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /backoffice
+Not Found: /backoffice/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /favicon.ico
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /backoffice/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /
+Not Found: /
+Message reçu: 'Where are you located?', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Where are you located?', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Message reçu: 'Where are you located?', Langue: fr
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse à votre question. Pouvez-vous reformuler ou poser une autre question ?'
+Not Found: /employee/send-mail/1/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /
+Not Found: /
+Not Found: /get-horilla-installed-apps/
+Not Found: /recruitment/pipeline-stages-component/list/
+Not Found: /recruitment/pipeline-stages-component/list/
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /recruitment/pipeline/
+Not Found: /get-horilla-installed-apps/
+Not Found: /get-horilla-installed-apps/
+Not Found: /reload-messages
+Not Found: /inbox/notifications/api/unread_list/
+Not Found: /
+Not Found: /favicon.ico
