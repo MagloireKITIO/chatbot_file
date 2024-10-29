@@ -1,200 +1,651 @@
 {
     "metadata": {
-        "version": "1.0",
+        "version": "2.0",
         "language": "fr",
-        "last_updated": "2023-10-20"
+        "last_updated": "2024-10-29",
+        "description": "FAQ ACTIVA Assurance - Version complète"
     },
     "settings": {
-        "welcome_message": "Bonjour, 😊 Merci d'avoir contacté ACTIVA ASSURANCE. Je suis Ruby, votre conseillère. Dites-nous comment nous pouvons vous aider s'il vous plaît?",
-        "farewell_message": "Merci d'avoir contacté ACTIVA, nous restons à votre entière disposition du lundi au vendredi de 8h à 18h au numéro gratuit 8033, par mail à service.clients@group-activa.com ou par whatsapp au 692880000. Activa, Passionnément client.",
+        "welcome_message": {
+            "text": "Bonjour, 😊 Merci d'avoir contacté ACTIVA ASSURANCE. Je suis Ruby, votre conseillère.",
+            "followup": "Dites-nous comment nous pouvons vous aider s'il vous plaît?"
+        },
+        "farewell_message": {
+            "text": "Merci d'avoir contacté ACTIVA",
+            "contact_info": "nous restons à votre entière disposition du lundi au vendredi de 8h à 18h au numéro gratuit 8033, par mail à service.clients@group-activa.com ou par whatsapp au 692880000.",
+            "signature": "Activa, Passionnément client."
+        },
         "inactivity_timeout": 600
     },
     "categories": [
         {
+            "id": "general",
             "name": "Général",
+            "description": "Informations générales et procédures courantes",
             "questions": [
                 {
                     "id": "gen_001",
                     "question": "Comment obtenir mon état d'encaissement/solde/situation ?",
-                    "answer": "Pour obtenir votre état d'encaissement/solde/situation, suivez ces étapes :\n1. Écrivez le mot 'police' (un document où figure votre numéro de police sera généré automatiquement)\n2. Écrivez 'Solde' suivi de votre numéro de police (Exemple: Solde 000000)",
+                    "alternative_questions": [
+                        "Comment voir mon solde ?",
+                        "Comment consulter ma situation ?",
+                        "Comment vérifier mes encaissements ?",
+                        "Je veux voir mon état d'encaissement"
+                    ],
+                    "answer": {
+                        "title": "Obtenir votre état d'encaissement/solde/situation",
+                        "introduction": "Afin de recevoir automatiquement vos informations, veuillez suivre ces étapes :",
+                        "steps": [
+                            {
+                                "step": "Écrivez le mot suivant : police",
+                                "note": "un document où figure votre numéro de police sera généré automatiquement",
+                                "example": "Police",
+                                "tip": "Assurez-vous d'écrire exactement le mot 'police'"
+                            },
+                            {
+                                "step": "Écrivez: Solde suivi de votre numéro de police",
+                                "example": "Solde n° de police ( Solde 000000 )",
+                                "warning": "Le numéro de police doit être exact"
+                            }
+                        ],
+                        "conclusion": "Votre solde sera affiché instantanément après ces étapes.",
+                        "additional_info": "Cette procédure est automatisée et disponible 24h/24."
+                    },
                     "keywords": [
                         "solde",
                         "encaissement",
                         "situation",
-                        "police"
+                        "police",
+                        "état",
+                        "consulter",
+                        "vérifier"
                     ]
                 },
                 {
                     "id": "gen_002",
                     "question": "Quelles sont les heures d'ouverture de votre société d'assurance ?",
-                    "answer": "Nous sommes ouverts du lundi au vendredi de 8h à 17h 30.",
+                    "alternative_questions": [
+                        "À quelle heure ouvrez-vous ?",
+                        "Quels sont vos horaires ?",
+                        "Quand êtes-vous ouverts ?"
+                    ],
+                    "answer": {
+                        "title": "Horaires d'ouverture",
+                        "text": "Nous sommes ouverts du lundi au vendredi de 8h à 17h 30."
+                    },
                     "keywords": [
                         "horaires",
                         "ouverture",
-                        "heures"
+                        "heures",
+                        "ouverts"
                     ]
                 },
                 {
                     "id": "gen_003",
                     "question": "Comment puis-je contacter votre société d'assurance ?",
-                    "answer": "Vous pouvez nous contacter par téléphone au 8033, par e-mail à service.clients@group-activa.com ou par WhatsApp au 692880000.",
+                    "alternative_questions": [
+                        "Comment vous joindre ?",
+                        "Quel est votre numéro ?",
+                        "Comment vous contacter ?"
+                    ],
+                    "answer": {
+                        "title": "Nos coordonnées de contact",
+                        "steps": [
+                            {
+                                "step": "Par téléphone",
+                                "info": "Appelez gratuitement le 8033"
+                            },
+                            {
+                                "step": "Par email",
+                                "info": "Écrivez à service.clients@group-activa.com"
+                            },
+                            {
+                                "step": "Par WhatsApp",
+                                "info": "Contactez le 692880000"
+                            }
+                        ],
+                        "note": "Nous sommes disponibles du lundi au vendredi de 8h à 18h"
+                    },
                     "keywords": [
                         "contact",
                         "téléphone",
                         "email",
-                        "whatsapp"
+                        "whatsapp",
+                        "joindre",
+                        "numéro"
                     ]
                 }
             ]
         },
         {
+            "id": "souscription",
             "name": "Souscription et Modifications",
+            "description": "Informations sur la souscription et les modifications de contrat",
             "questions": [
                 {
                     "id": "sub_001",
                     "question": "Comment souscrire à un de vos produits ?",
-                    "answer": "Pour toutes informations sur nos différents produits, merci de consulter notre application mobile MY ACTIVA ou de contacter un de nos conseillers.",
+                    "alternative_questions": [
+                        "Je veux souscrire une assurance",
+                        "Comment devenir client ?",
+                        "Procédure de souscription"
+                    ],
+                    "answer": {
+                        "title": "Souscription à nos produits",
+                        "steps": [
+                            {
+                                "step": "Consultez nos produits sur l'application mobile MY ACTIVA",
+                                "tip": "Téléchargez l'application sur votre store préféré"
+                            },
+                            {
+                                "step": "Contactez un de nos conseillers",
+                                "note": "Disponible au 8033"
+                            }
+                        ],
+                        "additional_info": "Nos conseillers sont là pour vous guider dans votre choix et vous proposer la meilleure solution adaptée à vos besoins."
+                    },
                     "keywords": [
                         "souscrire",
+                        "souscription",
                         "produits",
-                        "conditions"
+                        "devenir client"
                     ]
                 },
                 {
                     "id": "sub_002",
                     "question": "Comment augmenter ou diminuer ma prime mensuelle ?",
-                    "answer": "Pour augmenter ou diminuer votre prime mensuelle, vous devez :\n- Rédiger une demande ayant pour objet 'augmentation ou diminution de ma prime mensuelle'\n- Joindre une photocopie de votre CNI\n- Envoyer les documents via ce canal ou les déposer dans un de nos points.",
+                    "alternative_questions": [
+                        "Je veux modifier ma prime",
+                        "Changer le montant de ma prime",
+                        "Modification de prime"
+                    ],
+                    "answer": {
+                        "title": "Modification de votre prime mensuelle",
+                        "introduction": "Pour augmenter ou diminuer votre prime mensuelle, voici les pièces à fournir :",
+                        "steps": [
+                            {
+                                "step": "Rédiger une demande ayant pour objet 'augmentation ou diminution de ma prime mensuelle'",
+                                "tip": "La demande doit être claire et précise",
+                                "example": "Objet : Demande d'augmentation de ma prime mensuelle de la police n° XXXXX"
+                            },
+                            {
+                                "step": "Joindre une photocopie de votre CNI",
+                                "warning": "La CNI doit être en cours de validité"
+                            },
+                            {
+                                "step": "Envoyer les documents via ce canal ou déposer dans un de nos points",
+                                "note": "Tous nos points d'accueil sont ouverts de 8h à 17h30"
+                            }
+                        ],
+                        "conclusion": "Votre demande sera traitée dans un délai de 48h ouvrées.",
+                        "additional_info": "La modification prendra effet le mois suivant la validation de votre demande."
+                    },
                     "keywords": [
                         "prime",
+                        "mensuelle",
                         "augmentation",
-                        "diminution"
-                    ]
-                },
-                {
-                    "id": "sub_003",
-                    "question": "Comment modifier le nom du souscripteur et/ou bénéficiaire ?",
-                    "answer": "Pour modifier le nom du souscripteur et/ou bénéficiaire, fournissez :\n- Une demande ayant pour objet 'modification du nom'\n- Une photocopie de CNI et/ou Acte de naissance\n- Envoyez les documents via ce canal ou déposez-les dans un de nos points.",
-                    "keywords": [
-                        "modification",
-                        "nom",
-                        "souscripteur",
-                        "bénéficiaire"
+                        "diminution",
+                        "modifier",
+                        "changer"
                     ]
                 }
             ]
         },
         {
+            "id": "paiement",
             "name": "Paiement",
+            "description": "Informations sur les modes de paiement et procédures",
             "questions": [
                 {
                     "id": "pay_001",
                     "question": "Comment passer au mode de paiement par prélèvement ?",
-                    "answer": "Pour passer au mode de paiement par prélèvement, fournissez :\n- Une demande ayant pour objet 'modification du mode paiement'\n- Votre RIB\n- Une photocopie de votre CNI\n- Envoyez les documents via ce canal ou déposez-les dans un de nos points.",
+                    "alternative_questions": [
+                        "Je veux payer par prélèvement",
+                        "Comment mettre en place un prélèvement automatique",
+                        "Passer au prélèvement bancaire"
+                    ],
+                    "answer": {
+                        "title": "Passage au mode de paiement par prélèvement",
+                        "introduction": "Pour passer au mode de paiement par prélèvement, voici les documents à fournir :",
+                        "steps": [
+                            {
+                                "step": "Rédiger une demande ayant pour objet 'modification du mode paiement'",
+                                "example": "Objet : Demande de modification du mode de paiement - Passage au prélèvement"
+                            },
+                            {
+                                "step": "Joindre votre RIB",
+                                "warning": "Le RIB doit être celui du compte à prélever"
+                            },
+                            {
+                                "step": "Joindre une photocopie de votre CNI",
+                                "note": "La CNI doit être en cours de validité"
+                            },
+                            {
+                                "step": "Envoyer les documents via ce canal ou déposer dans un de nos points",
+                                "tip": "Tous nos points d'accueil sont accessibles de 8h à 17h30"
+                            }
+                        ],
+                        "conclusion": "Votre demande sera traitée sous 48h ouvrées.",
+                        "additional_info": "Le prélèvement sera effectif à partir du mois suivant l'activation."
+                    },
                     "keywords": [
-                        "paiement",
                         "prélèvement",
-                        "mode"
+                        "paiement",
+                        "bancaire",
+                        "RIB",
+                        "automatique"
                     ]
                 },
                 {
                     "id": "pay_002",
                     "question": "Comment passer au mode de paiement en espèces ?",
-                    "answer": "Pour passer au mode de paiement en espèces, fournissez :\n- Une demande ayant pour objet 'modification du mode paiement'\n- Une photocopie de votre CNI\n- Envoyez les documents via ce canal ou déposez-les dans un de nos points.",
+                    "alternative_questions": [
+                        "Je veux payer en espèces",
+                        "Passer au paiement en liquide",
+                        "Changer pour paiement espèces"
+                    ],
+                    "answer": {
+                        "title": "Passage au mode de paiement en espèces",
+                        "introduction": "Pour passer au mode de paiement en espèces, voici les documents à fournir :",
+                        "steps": [
+                            {
+                                "step": "Rédiger une demande ayant pour objet 'modification du mode paiement'",
+                                "example": "Objet : Demande de modification du mode de paiement - Passage en espèces"
+                            },
+                            {
+                                "step": "Joindre une photocopie de votre CNI",
+                                "warning": "La CNI doit être en cours de validité"
+                            },
+                            {
+                                "step": "Envoyer les documents via ce canal ou déposer dans un de nos points"
+                            }
+                        ],
+                        "conclusion": "Le changement sera effectif dès validation de votre demande."
+                    },
                     "keywords": [
-                        "paiement",
                         "espèces",
-                        "mode"
+                        "liquide",
+                        "cash",
+                        "paiement"
                     ]
                 },
                 {
                     "id": "pay_003",
                     "question": "Comment puis-je payer mes primes d'assurance ?",
-                    "answer": "Vous pouvez payer vos primes d'assurance via notre application mobile MY ACTIVA. Nous acceptons également les virements bancaires, les chèques et les espèces. Pour plus d'informations, contactez-nous gratuitement au 8033 du lundi au vendredi de 8h à 18h.",
+                    "alternative_questions": [
+                        "Quels sont les moyens de paiement disponibles",
+                        "Comment régler mes primes",
+                        "Options de paiement"
+                    ],
+                    "answer": {
+                        "title": "Moyens de paiement disponibles",
+                        "introduction": "Plusieurs options s'offrent à vous pour le paiement de vos primes :",
+                        "steps": [
+                            {
+                                "step": "Via l'application mobile MY ACTIVA",
+                                "tip": "Solution rapide et disponible 24h/24"
+                            },
+                            {
+                                "step": "Par virement bancaire",
+                                "note": "Contactez-nous pour obtenir nos coordonnées bancaires"
+                            },
+                            {
+                                "step": "Par chèque",
+                                "warning": "Les chèques doivent être libellés à l'ordre d'ACTIVA Assurance"
+                            },
+                            {
+                                "step": "En espèces dans nos agences",
+                                "note": "Pendant nos heures d'ouverture"
+                            }
+                        ],
+                        "contact": "Pour plus d'informations, appelez gratuitement au 8033 du lundi au vendredi de 8h à 18h"
+                    },
                     "keywords": [
                         "paiement",
                         "primes",
-                        "méthodes"
+                        "régler",
+                        "payer",
+                        "mobile",
+                        "virement",
+                        "chèque"
                     ]
                 }
             ]
         },
         {
+            "id": "rachat",
             "name": "Rachat et Avance",
+            "description": "Procédures pour les rachats et demandes d'avance",
             "questions": [
                 {
                     "id": "rac_001",
                     "question": "Comment faire un rachat total ?",
-                    "answer": "Pour un rachat total, fournissez :\n- Une requête adressée au directeur général d'ACTIVA - Vie pour 'Demande de rachat total de la police xxxxx'\n- Un relevé d'identité bancaire signé 3 fois\n- Une photocopie de votre CNI\nPour plus d'informations, appelez gratuitement au 8033 du lundi au vendredi de 08h à 18h.",
+                    "alternative_questions": [
+                        "Procédure de rachat total",
+                        "Je veux faire un rachat total",
+                        "Demande de rachat total"
+                    ],
+                    "answer": {
+                        "title": "Procédure de rachat total",
+                        "introduction": "Pour effectuer un rachat total, voici les documents à fournir :",
+                        "steps": [
+                            {
+                                "step": "Rédiger une requête adressée au directeur général d'ACTIVA - Vie",
+                                "note": "Objet : 'Demande de rachat total de la police xxxxx'",
+                                "example": "Monsieur le Directeur Général, je souhaite effectuer un rachat total de ma police n° XXXXX..."
+                            },
+                            {
+                                "step": "Joindre un relevé d'identité bancaire",
+                                "warning": "Le RIB doit être signé 3 fois",
+                                "tip": "Utilisez un stylo bleu pour les signatures"
+                            },
+                            {
+                                "step": "Joindre une photocopie de votre CNI",
+                                "note": "La CNI doit être en cours de validité"
+                            }
+                        ],
+                        "additional_info": "Pour des informations complémentaires, appelez gratuitement au 8033 du lundi au vendredi de 08h à 18h",
+                        "conclusion": "Le traitement de votre demande prendra environ 72h ouvrées."
+                    },
                     "keywords": [
                         "rachat",
-                        "total"
+                        "total",
+                        "clôture",
+                        "fermeture"
                     ]
                 },
                 {
                     "id": "rac_002",
                     "question": "Comment faire un rachat partiel ?",
-                    "answer": "Pour un rachat partiel, fournissez :\n- Une requête adressée au directeur général d'ACTIVA - Vie pour 'Demande de rachat partiel de la police xxxxx'\n- Un relevé d'identité bancaire signé 3 fois\n- Une photocopie de votre CNI\nPour plus d'informations, appelez gratuitement au 8033 du lundi au vendredi de 08h à 18h.",
+                    "alternative_questions": [
+                        "Procédure de rachat partiel",
+                        "Je veux faire un rachat partiel",
+                        "Demande de rachat partiel"
+                    ],
+                    "answer": {
+                        "title": "Procédure de rachat partiel",
+                        "introduction": "Pour effectuer un rachat partiel, voici les documents à fournir :",
+                        "steps": [
+                            {
+                                "step": "Rédiger une requête adressée au directeur général d'ACTIVA - Vie",
+                                "note": "Objet : 'Demande de rachat partiel de la police xxxxx'",
+                                "example": "Monsieur le Directeur Général, je souhaite effectuer un rachat partiel de ma police n° XXXXX pour un montant de..."
+                            },
+                            {
+                                "step": "Joindre un relevé d'identité bancaire",
+                                "warning": "Le RIB doit être signé 3 fois",
+                                "tip": "Utilisez un stylo bleu pour les signatures"
+                            },
+                            {
+                                "step": "Joindre une photocopie de votre CNI",
+                                "note": "La CNI doit être en cours de validité"
+                            }
+                        ],
+                        "additional_info": "Pour des informations complémentaires, appelez gratuitement au 8033 du lundi au vendredi de 08h à 18h"
+                    },
                     "keywords": [
                         "rachat",
-                        "partiel"
+                        "partiel",
+                        "retrait"
                     ]
                 },
                 {
                     "id": "rac_003",
                     "question": "Comment faire une demande d'avance ?",
-                    "answer": "Pour une demande d'avance, fournissez :\n- Une requête adressée au directeur général d'ACTIVA - Vie pour 'Demande d'avance de la police xxxxx'\n- Un relevé d'identité bancaire signé 3 fois\n- Une photocopie de votre CNI\nPour plus d'informations, appelez gratuitement au 8033 du lundi au vendredi de 08h à 18h.",
+                    "alternative_questions": [
+                        "Procédure de demande d'avance",
+                        "Je veux faire une avance",
+                        "Obtenir une avance"
+                    ],
+                    "answer": {
+                        "title": "Procédure de demande d'avance",
+                        "introduction": "Pour effectuer une demande d'avance, voici les documents à fournir :",
+                        "steps": [
+                            {
+                                "step": "Rédiger une requête adressée au directeur général d'ACTIVA - Vie",
+                                "note": "Objet : 'Demande d'avance de la police xxxxx'",
+                                "example": "Monsieur le Directeur Général, je souhaite obtenir une avance sur ma police n° XXXXX..."
+                            },
+                            {
+                                "step": "Joindre un relevé d'identité bancaire",
+                                "warning": "Le RIB doit être signé 3 fois",
+                                "tip": "Utilisez un stylo bleu pour les signatures"
+                            },
+                            {
+                                "step": "Joindre une photocopie de votre CNI",
+                                "note": "La CNI doit être en cours de validité"
+                            }
+                        ],
+                        "additional_info": "Pour des informations complémentaires, appelez gratuitement au 8033 du lundi au vendredi de 08h à 18h"
+                    },
                     "keywords": [
-                        "avance"
+                        "avance",
+                        "prêt",
+                        "emprunt"
                     ]
                 }
             ]
         },
         {
+            "id": "sinistres",
             "name": "Sinistres",
+            "description": "Procédures de déclaration et suivi des sinistres",
             "questions": [
                 {
                     "id": "sin_001",
                     "question": "Comment déclarer un sinistre automobile ?",
-                    "answer": "Pour déclarer un sinistre automobile, fournissez dans les 5 jours suivant le sinistre :\n- La fiche de déclaration de sinistre\n- Le procès-verbal\n- Les photos du sinistre\n- Une photocopie de la CNI de l'assuré",
+                    "alternative_questions": [
+                        "Déclarer un accident de voiture",
+                        "Procédure sinistre auto",
+                        "Accident avec ma voiture"
+                    ],
+                    "answer": {
+                        "title": "Déclaration d'un sinistre automobile",
+                        "introduction": "Pour déclarer un sinistre automobile, voici les documents à fournir dans les 5 jours suivant le sinistre :",
+                        "steps": [
+                            {
+                                "step": "Remplir la fiche de déclaration de sinistre",
+                                "tip": "Document disponible dans nos agences ou sur demande"
+                            },
+                            {
+                                "step": "Fournir le procès-verbal",
+                                "warning": "À obtenir auprès des autorités compétentes"
+                            },
+                            {
+                                "step": "Joindre les photos du sinistre",
+                                "note": "Photos montrant clairement les dégâts"
+                            },
+                            {
+                                "step": "Joindre une photocopie de la CNI de l'assuré",
+                                "note": "La CNI doit être en cours de validité"
+                            }
+                        ],
+                        "additional_info": "La déclaration doit être faite dans les 5 jours ouvrés suivant le sinistre"
+                    },
                     "keywords": [
                         "sinistre",
                         "automobile",
+                        "accident",
+                        "voiture",
                         "déclaration"
                     ]
                 },
                 {
                     "id": "sin_002",
                     "question": "Comment déclarer un sinistre décès ?",
-                    "answer": "Pour déclarer un sinistre décès, fournissez :\n- Une demande ayant pour objet 'déclaration de sinistre vie ou décès'\n- Le certificat de genre de mort\n- Le certificat de décès\n- Un relevé d'identité bancaire",
+                    "alternative_questions": [
+                        "Déclarer un décès",
+                        "Procédure en cas de décès",
+                        "Déclaration de décès"
+                    ],
+                    "answer": {
+                        "title": "Déclaration d'un sinistre décès",
+                        "introduction": "Pour déclarer un sinistre décès, voici les documents à fournir :",
+                        "steps": [
+                            {
+                                "step": "Rédiger une demande",
+                                "note": "Objet : 'déclaration de sinistre vie ou décès'"
+                            },
+                            {
+                                "step": "Fournir le certificat de genre de mort",
+                                "warning": "Document officiel obligatoire"
+                            },
+                            {
+                                "step": "Fournir le certificat de décès",
+                                "note": "Document délivré par les autorités"
+                            },
+                            {
+                                "step": "Joindre un relevé d'identité bancaire",
+                                "tip": "Pour le versement des prestations"
+                            }
+                        ],
+                        "conclusion": "Le dossier complet doit être déposé dans une de nos agences."
+                    },
                     "keywords": [
-                        "sinistre",
                         "décès",
+                        "mort",
+                        "sinistre",
                         "déclaration"
                     ]
                 }
             ]
         },
         {
+            "id": "info_pratique",
             "name": "Informations pratiques",
+            "description": "Informations générales sur nos services et localisations",
             "questions": [
                 {
                     "id": "info_001",
                     "question": "Quels sont les produits d'assurance que vous offrez ?",
-                    "answer": "Nous offrons des produits d'assurance vie, santé, habitation, automobile, etc. Pour en savoir plus, veuillez consulter notre application mobile My Activa ou contacter un de nos conseillers.",
+                    "alternative_questions": [
+                        "Vos produits d'assurance",
+                        "Quelles assurances proposez-vous",
+                        "Types d'assurance disponibles"
+                    ],
+                    "answer": {
+                        "title": "Nos produits d'assurance",
+                        "introduction": "Nous proposons une large gamme de produits d'assurance :",
+                        "steps": [
+                            {
+                                "step": "Assurance vie",
+                                "note": "Protection financière pour vous et vos proches"
+                            },
+                            {
+                                "step": "Assurance santé",
+                                "note": "Couverture médicale complète"
+                            },
+                            {
+                                "step": "Assurance habitation",
+                                "note": "Protection de votre domicile"
+                            },
+                            {
+                                "step": "Assurance automobile",
+                                "note": "Protection de votre véhicule"
+                            }
+                        ],
+                        "additional_info": "Pour plus de détails, consultez notre application mobile My Activa ou contactez un de nos conseillers",
+                        "contact": "Appelez le 8033 pour plus d'informations"
+                    },
                     "keywords": [
                         "produits",
-                        "offres"
+                        "assurance",
+                        "offres",
+                        "services",
+                        "couverture"
                     ]
                 },
                 {
                     "id": "info_002",
                     "question": "Où êtes-vous situés ?",
-                    "answer": "Nos bureaux sont situés :\n● Direction générale : Akwa Douala, près de l'hôtel Prince de Galles\n● Yaoundé : Hippodrome, derrière la chambre du commerce\n● Bafoussam : Face CONGELCAM Tamdja\n● Kribi : Face Commissariat Mokolo\n● Bamenda : Commercial Avenue\n● Garoua : Avenue de la Liberté",
+                    "alternative_questions": [
+                        "Vos agences",
+                        "Où vous trouver",
+                        "Adresse de vos bureaux",
+                        "Points de service",
+                        "Localisation"
+                    ],
+                    "answer": {
+                        "title": "Nos points de service",
+                        "introduction": "Vous pouvez nous retrouver dans plusieurs villes :",
+                        "steps": [
+                            {
+                                "step": "Direction générale - Douala",
+                                "info": "Akwa Douala, près de l'hôtel Prince de Galles",
+                                "tip": "Siège principal"
+                            },
+                            {
+                                "step": "Agence de Yaoundé",
+                                "info": "Hippodrome, derrière la chambre du commerce"
+                            },
+                            {
+                                "step": "Agence de Bafoussam",
+                                "info": "Face CONGELCAM Tamdja"
+                            },
+                            {
+                                "step": "Agence de Kribi",
+                                "info": "Face Commissariat Mokolo"
+                            },
+                            {
+                                "step": "Agence de Bamenda",
+                                "info": "Commercial Avenue"
+                            },
+                            {
+                                "step": "Agence de Garoua",
+                                "info": "Avenue de la Liberté"
+                            }
+                        ],
+                        "note": "Toutes nos agences sont ouvertes du lundi au vendredi de 8h à 17h30",
+                        "additional_info": "Pour plus d'informations sur nos agences, contactez-nous au 8033"
+                    },
                     "keywords": [
                         "localisation",
                         "adresse",
+                        "agence",
+                        "bureau",
                         "situation",
-                        "bureaux"
+                        "où",
+                        "ville"
+                    ]
+                },
+                {
+                    "id": "info_003",
+                    "question": "Comment accéder à l'application mobile My ACTIVA ?",
+                    "alternative_questions": [
+                        "Télécharger l'app My ACTIVA",
+                        "Installation My ACTIVA",
+                        "Où trouver l'application My ACTIVA"
+                    ],
+                    "answer": {
+                        "title": "Accès à l'application My ACTIVA",
+                        "introduction": "Pour accéder à notre application mobile, suivez ces étapes :",
+                        "steps": [
+                            {
+                                "step": "Téléchargez l'application",
+                                "options": [
+                                    "Sur Google Play Store pour Android",
+                                    "Sur App Store pour iOS"
+                                ]
+                            },
+                            {
+                                "step": "Créez votre compte",
+                                "note": "Vous aurez besoin de votre numéro de police"
+                            },
+                            {
+                                "step": "Activez votre compte",
+                                "tip": "Un code d'activation vous sera envoyé par SMS"
+                            }
+                        ],
+                        "additional_info": "L'application vous permet de gérer vos contrats, payer vos primes et suivre vos sinistres",
+                        "contact": "En cas de difficulté, contactez notre support au 8033"
+                    },
+                    "keywords": [
+                        "application",
+                        "mobile",
+                        "app",
+                        "My ACTIVA",
+                        "télécharger",
+                        "installer"
                     ]
                 }
             ]

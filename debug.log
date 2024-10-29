@@ -270,3 +270,441 @@ Not Found: /reload-messages
 Not Found: /inbox/notifications/api/unread_list/
 Not Found: /
 Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Message reçu: 'Comment voir mon solde ?', Langue: fr
+Les données FAQ n'ont pas été chargées
+Réponse du chatbot: 'Les données FAQ n'ont pas été chargées.'
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Message reçu: 'Où êtes-vous situés ?', Langue: fr
+Recherche de correspondance pour: 'Où êtes-vous situés ?'
+Aucune correspondance satisfaisante trouvée. Meilleur score: 0
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse exacte à votre question. Pouvez-vous reformuler ou être plus précis ? Je suis là pour vous aider.'
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Message reçu: 'Où êtes-vous situés ?', Langue: fr
+Question normalisée: 'ou etes vous situes'
+Meilleur score trouvé: 0
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse exacte à votre question. Pouvez-vous reformuler ou être plus précis ?'
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Question normalisée: 'declarer un sinistre'
+Meilleur score trouvé: 0
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse exacte à votre question. Pouvez-vous reformuler ou être plus précis ?'
+Message reçu: 'Contacter un conseiller', Langue: fr
+Question normalisée: 'contacter un conseiller'
+Meilleur score trouvé: 0
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse exacte à votre question. Pouvez-vous reformuler ou être plus précis ?'
+Message reçu: 'Obtenir un devis', Langue: fr
+Question normalisée: 'obtenir un devis'
+Meilleur score trouvé: 0
+Réponse du chatbot: 'Je suis désolé, je n'ai pas trouvé de réponse exacte à votre question. Pouvez-vous reformuler ou être plus précis ?'
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Erreur lors de la construction des patterns: 'questions'
+Données FAQ chargées avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files\faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Erreur lors de la construction des patterns: 'questions'
+Données FAQ chargées avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files\faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Erreur lors de la construction des patterns: 'questions'
+Données FAQ chargées avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files\faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+Corps de la requête reçue: {"message":"Obtenir un devis"}
+Message reçu: 'Obtenir un devis', Langue: fr
+Question normalisée: 'obtenir un devis'
+Score pour gen_001: 53.0
+Score pour gen_002: 38.16
+Score pour gen_003: 37.800000000000004
+Score pour sub_001: 50.6
+Score pour sub_002: 37.6
+Meilleur score trouvé: 53.0
+Réponse trouvée: Je suis désolé, je n'ai pas trouvé de réponse exacte à votre question. Pouvez-vous reformuler ou être plus précis ?
+Erreur lors de la génération des suggestions: 'questions'
+Suggestions générées: []
+Corps de la requête reçue: {"message":"Déclarer un sinistre"}
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Question normalisée: 'declarer un sinistre'
+Score pour gen_001: 38.79
+Score pour gen_002: 36.81
+Score pour gen_003: 40.5
+Score pour sub_001: 43.019999999999996
+Score pour sub_002: 35.6
+Meilleur score trouvé: 43.019999999999996
+Réponse trouvée: Je suis désolé, je n'ai pas trouvé de réponse exacte à votre question. Pouvez-vous reformuler ou être plus précis ?
+Erreur lors de la génération des suggestions: 'questions'
+Suggestions générées: []
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\views.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Erreur lors de la construction des patterns: 'questions'
+Données FAQ chargées avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files\faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Chargement du FAQ depuis: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Structure FAQ invalide
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+Message reçu: 'Comment obtenir mon état d'encaissement/solde/situation ?', Langue: fr
+Recherche de correspondance pour: 'Comment obtenir mon état d'encaissement/solde/situation ?'
+Score pour gen_001: 92.9
+Score pour gen_002: 39.98
+Score pour gen_003: 54.13999999999999
+Score pour sub_001: 50.94
+Score pour sub_002: 49.03999999999999
+Erreur lors de la recherche: 'questions'
+Erreur lors de la génération des suggestions: 'questions'
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Structure FAQ invalide
+FAQ chargé avec succès pour fr
+Les données FAQ sont None pour fr après chargement
+Message reçu: 'Comment obtenir mon état d'encaissement/solde/situation ?', Langue: fr
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Structure FAQ invalide
+FAQ chargé avec succès pour fr
+Les données FAQ sont None pour fr après chargement
+Message reçu: 'Comment obtenir mon état d'encaissement/solde/situation ?', Langue: fr
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+Structure FAQ invalide
+FAQ chargé avec succès pour fr
+Les données FAQ sont None pour fr après chargement
+Message reçu: 'Comment obtenir mon état d'encaissement/solde/situation ?', Langue: fr
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+Recherche de correspondance pour: 'Comment obtenir mon état d'encaissement/solde/situation ?'
+Score pour gen_001: 89.21
+Score pour gen_002: 36.74
+Score pour gen_003: 46.32
+Score pour sub_001: 46.129999999999995
+Score pour sub_002: 44.78999999999999
+Score pour pay_001: 47.01
+Score pour pay_002: 47.65
+Score pour pay_003: 45.43000000000001
+Score pour rac_001: 42.83
+Score pour rac_002: 40.20000000000001
+Score pour rac_003: 47.28
+Score pour sin_001: 44.129999999999995
+Score pour sin_002: 47.43
+Score pour info_001: 35.7
+Score pour info_002: 42.17
+Score pour info_003: 41.260000000000005
+Meilleur score trouvé: 89.21
+Message reçu: 'sinistre', Langue: fr
+Recherche de correspondance pour: 'sinistre'
+Score pour gen_001: 30.650000000000002
+Score pour gen_002: 26.82
+Score pour gen_003: 34.89
+Score pour sub_001: 30.160000000000004
+Score pour sub_002: 27.75
+Score pour pay_001: 27.92
+Score pour pay_002: 27.669999999999998
+Score pour pay_003: 29.47
+Score pour rac_001: 26.400000000000002
+Score pour rac_002: 24.970000000000002
+Score pour rac_003: 28.05
+Score pour sin_001: 79.36
+Score pour sin_002: 66.82
+Score pour info_001: 31.400000000000002
+Score pour info_002: 36.57
+Score pour info_003: 26.869999999999997
+Meilleur score trouvé: 79.36
+Message reçu: 'comment vous joindre', Langue: fr
+Recherche de correspondance pour: 'comment vous joindre'
+Score pour gen_001: 52.13
+Score pour gen_002: 36.13
+Score pour gen_003: 68.08
+Score pour sub_001: 55.709999999999994
+Score pour sub_002: 45.46
+Score pour pay_001: 46.08
+Score pour pay_002: 42.61
+Score pour pay_003: 48.660000000000004
+Score pour rac_001: 48.39
+Score pour rac_002: 43.190000000000005
+Score pour rac_003: 46.44
+Score pour sin_001: 47.57
+Score pour sin_002: 46.94
+Score pour info_001: 39.24
+Score pour info_002: 51.85
+Score pour info_003: 39.599999999999994
+Meilleur score trouvé: 68.08
+Message reçu: 'comment puis je vous joindre', Langue: fr
+Recherche de correspondance pour: 'comment puis je vous joindre'
+Score pour gen_001: 46.550000000000004
+Score pour gen_002: 38.870000000000005
+Score pour gen_003: 70.4
+Score pour sub_001: 53.86
+Score pour sub_002: 45.52
+Score pour pay_001: 46.34
+Score pour pay_002: 45.52000000000001
+Score pour pay_003: 55.260000000000005
+Score pour rac_001: 45.910000000000004
+Score pour rac_002: 45.769999999999996
+Score pour rac_003: 47.949999999999996
+Score pour sin_001: 48.79
+Score pour sin_002: 48.32
+Score pour info_001: 45.64
+Score pour info_002: 49.18
+Score pour info_003: 35.63
+Meilleur score trouvé: 70.4
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+Message reçu: 'comment puis je vous joindre', Langue: fr
+Recherche de correspondance pour: 'comment puis je vous joindre'
+Score pour gen_001: 46.550000000000004
+Score pour gen_002: 38.870000000000005
+Score pour gen_003: 70.4
+Score pour sub_001: 53.86
+Score pour sub_002: 45.52
+Score pour pay_001: 46.34
+Score pour pay_002: 45.52000000000001
+Score pour pay_003: 55.260000000000005
+Score pour rac_001: 45.910000000000004
+Score pour rac_002: 45.769999999999996
+Score pour rac_003: 47.949999999999996
+Score pour sin_001: 48.79
+Score pour sin_002: 48.32
+Score pour info_001: 45.64
+Score pour info_002: 49.18
+Score pour info_003: 35.63
+Meilleur score trouvé: 70.4
+Message reçu: 'Déclarer un sinistre', Langue: fr
+Recherche de correspondance pour: 'Déclarer un sinistre'
+Score pour gen_001: 38.35
+Score pour gen_002: 34.04
+Score pour gen_003: 36.839999999999996
+Score pour sub_001: 41.2
+Score pour sub_002: 34.53
+Score pour pay_001: 35.74999999999999
+Score pour pay_002: 34.98
+Score pour pay_003: 34.5
+Score pour rac_001: 41.370000000000005
+Score pour rac_002: 39.5
+Score pour rac_003: 41.99000000000001
+Score pour sin_001: 81.09
+Score pour sin_002: 83.78
+Score pour info_001: 35.879999999999995
+Score pour info_002: 44.34
+Score pour info_003: 33.300000000000004
+Meilleur score trouvé: 83.78
+Message reçu: 'sinistre', Langue: fr
+Recherche de correspondance pour: 'sinistre'
+Score pour gen_001: 30.650000000000002
+Score pour gen_002: 26.82
+Score pour gen_003: 34.89
+Score pour sub_001: 30.160000000000004
+Score pour sub_002: 27.75
+Score pour pay_001: 27.92
+Score pour pay_002: 27.669999999999998
+Score pour pay_003: 29.47
+Score pour rac_001: 26.400000000000002
+Score pour rac_002: 24.970000000000002
+Score pour rac_003: 28.05
+Score pour sin_001: 79.36
+Score pour sin_002: 66.82
+Score pour info_001: 31.400000000000002
+Score pour info_002: 36.57
+Score pour info_003: 26.869999999999997
+Meilleur score trouvé: 79.36
+Message reçu: 'vos sinistres', Langue: fr
+Recherche de correspondance pour: 'vos sinistres'
+Score pour gen_001: 30.820000000000004
+Score pour gen_002: 37.160000000000004
+Score pour gen_003: 38.27
+Score pour sub_001: 38.34
+Score pour sub_002: 29.0
+Score pour pay_001: 29.78
+Score pour pay_002: 29.270000000000003
+Score pour pay_003: 32.8
+Score pour rac_001: 30.07
+Score pour rac_002: 25.37
+Score pour rac_003: 27.32
+Score pour sin_001: 49.45
+Score pour sin_002: 45.64
+Score pour info_001: 39.92
+Score pour info_002: 56.32000000000001
+Score pour info_003: 27.839999999999996
+Meilleur score trouvé: 56.32000000000001
+Message reçu: 'Quels sont les produits d'assurance que vous offrez ?', Langue: fr
+Recherche de correspondance pour: 'Quels sont les produits d'assurance que vous offrez ?'
+Score pour gen_001: 36.449999999999996
+Score pour gen_002: 57.27
+Score pour gen_003: 47.37
+Score pour sub_001: 57.53000000000001
+Score pour sub_002: 35.620000000000005
+Score pour pay_001: 38.559999999999995
+Score pour pay_002: 40.38
+Score pour pay_003: 49.63
+Score pour rac_001: 35.230000000000004
+Score pour rac_002: 36.68
+Score pour rac_003: 39.629999999999995
+Score pour sin_001: 37.6
+Score pour sin_002: 37.95
+Score pour info_001: 90.89999999999999
+Score pour info_002: 42.75
+Score pour info_003: 32.58
+Meilleur score trouvé: 90.89999999999999
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\chatbot\nlp_utils.py changed, reloading.
+Watching for file changes with StatReloader
+Initialisation du processeur NLP pour la langue: french
+Initialisation du processeur NLP pour la langue: english
+Début du chargement des données FAQ
+Tentative de chargement du fichier FAQ pour fr: C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès depuis C:\Users\stage.dsi.pmo\Documents\chatbot\activa_chatbot\media\faq_files/faq_fr.json
+FAQ chargé avec succès pour fr
+Données FAQ validées pour fr
+Message reçu: 'Quels sont les produits d'assurance que vous offrez ?', Langue: fr
+Recherche de correspondance pour: 'Quels sont les produits d'assurance que vous offrez ?'
+Score pour gen_001: 36.449999999999996
+Score pour gen_002: 57.27
+Score pour gen_003: 47.37
+Score pour sub_001: 57.53000000000001
+Score pour sub_002: 35.620000000000005
+Score pour pay_001: 38.559999999999995
+Score pour pay_002: 40.38
+Score pour pay_003: 49.63
+Score pour rac_001: 35.230000000000004
+Score pour rac_002: 36.68
+Score pour rac_003: 39.629999999999995
+Score pour sin_001: 37.6
+Score pour sin_002: 37.95
+Score pour info_001: 90.89999999999999
+Score pour info_002: 42.75
+Score pour info_003: 32.58
+Meilleur score trouvé: 90.89999999999999
+Message reçu: 'Quels sont les produits d'assurance que vous offrez ?', Langue: fr
+Recherche de correspondance pour: 'Quels sont les produits d'assurance que vous offrez ?'
+Score pour gen_001: 36.449999999999996
+Score pour gen_002: 57.27
+Score pour gen_003: 47.37
+Score pour sub_001: 57.53000000000001
+Score pour sub_002: 35.620000000000005
+Score pour pay_001: 38.559999999999995
+Score pour pay_002: 40.38
+Score pour pay_003: 49.63
+Score pour rac_001: 35.230000000000004
+Score pour rac_002: 36.68
+Score pour rac_003: 39.629999999999995
+Score pour sin_001: 37.6
+Score pour sin_002: 37.95
+Score pour info_001: 90.89999999999999
+Score pour info_002: 42.75
+Score pour info_003: 32.58
+Meilleur score trouvé: 90.89999999999999
+Message reçu: 'sinistre automobile', Langue: fr
+Recherche de correspondance pour: 'sinistre automobile'
+Score pour gen_001: 35.94
+Score pour gen_002: 33.21
+Score pour gen_003: 37.980000000000004
+Score pour sub_001: 36.88
+Score pour sub_002: 37.52
+Score pour pay_001: 40.38999999999999
+Score pour pay_002: 37.24
+Score pour pay_003: 38.86
+Score pour rac_001: 32.17
+Score pour rac_002: 30.5
+Score pour rac_003: 35.41
+Score pour sin_001: 83.23
+Score pour sin_002: 52.52
+Score pour info_001: 35.02
+Score pour info_002: 36.58
+Score pour info_003: 39.42
+Meilleur score trouvé: 83.23
+Message reçu: 'localisation', Langue: fr
+Recherche de correspondance pour: 'localisation'
+Score pour gen_001: 40.87
+Score pour gen_002: 28.670000000000005
+Score pour gen_003: 27.1
+Score pour sub_001: 32.85
+Score pour sub_002: 29.0
+Score pour pay_001: 23.09
+Score pour pay_002: 27.550000000000004
+Score pour pay_003: 26.85
+Score pour rac_001: 34.33
+Score pour rac_002: 34.64
+Score pour rac_003: 26.76
+Score pour sin_001: 37.21
+Score pour sin_002: 39.300000000000004
+Score pour info_001: 26.86
+Score pour info_002: 55.480000000000004
+Score pour info_003: 46.529999999999994
+Meilleur score trouvé: 55.480000000000004

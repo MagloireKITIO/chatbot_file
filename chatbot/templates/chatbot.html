@@ -256,6 +256,64 @@
             background-color: #007bff;
             color: white;
         }
+
+        .message-content {
+        /* Styles existants... */
+        white-space: pre-line;  /* Permet de préserver les sauts de ligne */
+    }
+
+    .message-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .message-introduction {
+        margin-bottom: 12px;
+    }
+
+    .message-steps {
+        margin: 10px 0;
+    }
+
+    .message-step {
+        margin: 8px 0 8px 20px;
+        position: relative;
+    }
+
+    .message-step::before {
+        content: counter(step) ".";
+        counter-increment: step;
+        position: absolute;
+        left: -20px;
+    }
+
+    .step-info {
+        margin: 5px 0 5px 20px;
+        font-size: 0.95em;
+        opacity: 0.9;
+    }
+
+    .message-notes {
+        margin-top: 15px;
+        font-style: italic;
+        opacity: 0.9;
+    }
+
+    .message-note {
+        margin: 5px 0;
+    }
+
+    .additional-info, .contact-info {
+        margin-top: 12px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .emoji-prefix {
+        margin-right: 5px;
+    }
     </style>
 </head>
 <body>
@@ -299,19 +357,23 @@
         }
 
         function sendMessageToBackend(message) {
-            fetch('/chatbot/api/message/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': getCookie('csrftoken')
-                },
-                body: JSON.stringify({ message: message })
-            })
-            .then(response => response.json())
-            .then(data => {
-                addBotMessage(data.response);
-            });
-        }
+    fetch('/chatbot/api/message/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken')
+        },
+        body: JSON.stringify({ message: message })
+    })
+    .then(response => response.json())
+    .then(data => {
+        addBotMessage(data.response);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        addBotMessage("Désolé, une erreur s'est produite.");
+    });
+}
 
         function getCookie(name) {
             let cookieValue = null;
@@ -390,16 +452,104 @@
 }
 
 function populateContent(message, contentElement) {
-    if (message.includes('1.') && message.includes('2.')) {
-        const steps = message.split(/\d+\.\s/).filter(step => step.trim() !== '');
-        const olElement = document.createElement('ol');
-        steps.forEach(step => {
-            const liElement = document.createElement('li');
-            liElement.textContent = step.trim();
-            olElement.appendChild(liElement);
-        });
-        contentElement.appendChild(olElement);
-    } else {
+    try {
+        // Essayer de parser le message comme JSON
+        let messageData = typeof message === 'string' ? JSON.parse(message) : message;
+        
+        if (messageData.type === "structured") {
+            // Titre avec emojis
+            if (messageData.title) {
+                const titleDiv = document.createElement('div');
+                titleDiv.className = 'message-title';
+                let titleText = '';
+                if (messageData.title.emoji) {
+                    messageData.title.emoji.forEach(emoji => {
+                        const emojiSpan = document.createElement('span');
+                        emojiSpan.className = 'emoji-prefix';
+                        emojiSpan.textContent = emoji;
+                        titleDiv.appendChild(emojiSpan);
+                    });
+                }
+                titleDiv.appendChild(document.createTextNode(messageData.title.text));
+                contentElement.appendChild(titleDiv);
+            }
+
+            // Introduction
+            if (messageData.introduction) {
+                const introDiv = document.createElement('div');
+                introDiv.className = 'message-introduction';
+                introDiv.textContent = messageData.introduction;
+                contentElement.appendChild(introDiv);
+            }
+
+            // Étapes
+            if (messageData.steps && messageData.steps.length > 0) {
+                const stepsDiv = document.createElement('div');
+                stepsDiv.className = 'message-steps';
+                stepsDiv.style.counterReset = 'step 0';
+
+                messageData.steps.forEach(step => {
+                    const stepDiv = document.createElement('div');
+                    stepDiv.className = 'message-step';
+                    
+                    // Texte principal de l'étape
+                    stepDiv.appendChild(document.createTextNode(step.main));
+
+                    // Informations supplémentaires
+                    if (step.info) {
+                        const infoDiv = document.createElement('div');
+                        infoDiv.className = 'step-info';
+                        infoDiv.textContent = step.info;
+                        stepDiv.appendChild(infoDiv);
+                    }
+
+                    if (step.warning) {
+                        const warningDiv = document.createElement('div');
+                        warningDiv.className = 'step-info';
+                        warningDiv.textContent = `⚠️ ${step.warning}`;
+                        stepDiv.appendChild(warningDiv);
+                    }
+
+                    stepsDiv.appendChild(stepDiv);
+                });
+
+                contentElement.appendChild(stepsDiv);
+            }
+
+            // Notes
+            if (messageData.notes && messageData.notes.length > 0) {
+                const notesDiv = document.createElement('div');
+                notesDiv.className = 'message-notes';
+                messageData.notes.forEach(note => {
+                    const noteDiv = document.createElement('div');
+                    noteDiv.className = 'message-note';
+                    noteDiv.textContent = `${note.title}: ${note.description}`;
+                    notesDiv.appendChild(noteDiv);
+                });
+                contentElement.appendChild(notesDiv);
+            }
+
+            // Informations supplémentaires
+            if (messageData.additional_info) {
+                const additionalDiv = document.createElement('div');
+                additionalDiv.className = 'additional-info';
+                additionalDiv.textContent = `ℹ️ ${messageData.additional_info}`;
+                contentElement.appendChild(additionalDiv);
+            }
+
+            // Contact
+            if (messageData.contact) {
+                const contactDiv = document.createElement('div');
+                contactDiv.className = 'contact-info';
+                contactDiv.textContent = `📞 ${messageData.contact}`;
+                contentElement.appendChild(contactDiv);
+            }
+        } else {
+            // Fallback pour les messages texte simple
+            contentElement.textContent = typeof message === 'string' ? message : JSON.stringify(message);
+        }
+    } catch (e) {
+        // Si le parsing JSON échoue, afficher le message comme texte simple
         contentElement.textContent = message;
     }
 }

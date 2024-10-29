@@ -10,22 +10,28 @@ from django.conf import settings
 import os
 
 def load_faq_data():
+    """Charge les données FAQ pour toutes les langues"""
+    logger.info("Début du chargement des données FAQ")
     for language in ['fr', 'en']:
-        faq_file = FAQFile.objects.filter(language=language).first()
-        if faq_file and faq_file.file:
-            file_path = os.path.join(settings.MEDIA_ROOT, faq_file.file.name)
-            if os.path.exists(file_path):
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as file:
-                        faq_data = json.load(file)
-                    nlp_processors[language].faq_data = faq_data
-                    print(f"FAQ chargé pour {language}: {faq_data}")
-                except Exception as e:
-                    print(f"Erreur lors du chargement du FAQ pour {language}: {str(e)}")
-            else:
-                print(f"Le fichier FAQ pour {language} n'existe pas: {file_path}")
-        else:
-            print(f"Aucun fichier FAQ trouvé pour la langue: {language}")
+        try:
+            faq_file = FAQFile.objects.filter(language=language).first()
+            if faq_file and faq_file.file:
+                file_path = os.path.join(settings.MEDIA_ROOT, faq_file.file.name)
+                logger.info(f"Tentative de chargement du fichier FAQ pour {language}: {file_path}")
+                
+                if os.path.exists(file_path):
+                    nlp_processors[language].load_faq_data(file_path)
+                    logger.info(f"FAQ chargé avec succès pour {language}")
+                    
+                    # Vérification du chargement
+                    if nlp_processors[language].faq_data:
+                        logger.info(f"Données FAQ validées pour {language}")
+                    else:
+                        logger.error(f"Les données FAQ sont None pour {language} après chargement")
+                else:
+                    logger.error(f"Le fichier FAQ n'existe pas: {file_path}")
+        except Exception as e:
+            logger.error(f"Erreur lors du chargement du FAQ pour {language}: {str(e)}")
 
 # Assurez-vous d'appeler cette fonction au démarrage de l'application
 load_faq_data()
@@ -39,29 +45,28 @@ def chatbot_interface(request):
 def chatbot_message(request):
     try:
         data = json.loads(request.body)
-        user_message = data.get('message')
+        user_message = data.get('message', '').strip()
         language = data.get('language', 'fr')
         
         logger.info(f"Message reçu: '{user_message}', Langue: {language}")
-
-        if not user_message:
-            logger.warning("Message vide reçu")
-            return JsonResponse({'error': 'Message is required'}, status=400)
         
         nlp_processor = nlp_processors.get(language)
         if not nlp_processor:
-            logger.error(f"Langue non supportée: {language}")
-            return JsonResponse({'error': 'Unsupported language'}, status=400)
-        
+            return JsonResponse({'error': 'Langue non supportée'}, status=400)
+            
+        if not nlp_processor.faq_data:
+            load_faq_data()
+            
         response = nlp_processor.find_best_match(user_message)
+        suggestions = nlp_processor.get_suggested_questions(user_message)
         
-        logger.info(f"Réponse du chatbot: '{response}'")
-        return JsonResponse({'response': response})
-    except json.JSONDecodeError:
-        logger.error("JSON invalide reçu")
-        return JsonResponse({'error': 'Invalid JSON'}, status=400)
+        return JsonResponse({
+            'response': response,
+            'suggestions': suggestions if 'désolé' in response else []
+        })
+        
     except Exception as e:
-        logger.exception("Erreur inattendue lors du traitement du message")
+        logger.error(f"Erreur: {str(e)}", exc_info=True)
         return JsonResponse({'error': str(e)}, status=500)
 
 def get_chatbot_settings(request):
